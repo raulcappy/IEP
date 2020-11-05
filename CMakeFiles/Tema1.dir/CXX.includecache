@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raul/Desktop/Tema1/dreptunghi.cpp
+iostream
+-
+cmath
+-
+dreptunghi.h
+/home/raul/Desktop/Tema1/dreptunghi.h
+
+/home/raul/Desktop/Tema1/dreptunghi.h
+
+/home/raul/Desktop/Tema1/main.cpp
+iostream
+-
+dreptunghi.h
+/home/raul/Desktop/Tema1/dreptunghi.h
+paralelipiped.h
+/home/raul/Desktop/Tema1/paralelipiped.h
+
+/home/raul/Desktop/Tema1/paralelipiped.h
+dreptunghi.h
+/home/raul/Desktop/Tema1/dreptunghi.h
+
