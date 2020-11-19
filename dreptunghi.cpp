@@ -26,7 +26,18 @@ dreptunghi& dreptunghi::operator =(const dreptunghi& ob) {
     latime = ob.latime;
     return *this;
 }
-
+dreptunghi& dreptunghi::operator =(int a)
+ {  
+    latime = a;
+    lungime = a;
+    return *this;
+ }
+dreptunghi& dreptunghi:: operator +=(const dreptunghi& ob2)
+{
+    this->latime = this->latime + ob2.latime;
+    //this->latime += ob2.latime;
+    return *this;
+}
 dreptunghi& dreptunghi::getDreptunghiInstance() {
     static dreptunghi d(this->getNume(), this->getL(), this->getl());
     return d;
