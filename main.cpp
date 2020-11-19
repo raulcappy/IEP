@@ -18,6 +18,11 @@ int main() {
     paralelipiped p1(d1, d2, d3);
     cout << "Volumul paralelipipedului: " << p1.Volum() << endl;
     
+    dreptunghi d4("d4",8,9),d5("d5",9,11),d6("d6",12,18);
+    d4=d5=d6; //demonstrate multiple assigment
+    cout<<"d4 are L: " <<d4.getL()<< "\t" <<" d5 are L: "<<d5.getL()<< "\t" <<"d6 are L:"<<d6.getL()<<endl;
+    d1 += d4;
+    cout<<"d1 este: "<<d1.getl()<<endl;
     //paralelipiped p2 = p1;  eroare de compilare
     return 0;
 }
