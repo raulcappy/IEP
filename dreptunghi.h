@@ -1,23 +1,22 @@
 #pragma once
-
+#include "figGeo.h"
 #ifndef DREPT_H
 #define DREPT_H
 
-class dreptunghi {
+class dreptunghi: public figGeo {
 public:
     dreptunghi(const std::string n, const int L, const int l);
+    dreptunghi(const int latura);
     dreptunghi(const dreptunghi& ob); //copy constructor
     dreptunghi& operator =(const dreptunghi& ob);
     dreptunghi& operator +=(const dreptunghi& ob2);
     dreptunghi& operator =(int a);
     ~dreptunghi();
     dreptunghi& getDreptunghiInstance();
-    std::string getNume();
     int Arie();
     int getL();
     int getl();
 private:
-    std::string nume;
     int lungime;
     int latime;
 };
