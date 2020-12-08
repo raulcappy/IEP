@@ -12,6 +12,7 @@ public:
 	~figGeo();
 	figGeo& operator= (const figGeo& ob);
 	std::string getNume();
+	static figGeo *construct(const std::string n);
 private:
 	std::string nume;
 };
@@ -19,3 +20,4 @@ private:
 
 
 #endif // !FIG_H
+
