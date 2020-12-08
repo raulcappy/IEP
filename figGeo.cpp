@@ -20,3 +20,7 @@ figGeo& figGeo::operator=(const figGeo& ob) {
 string figGeo::getNume() {
 	return nume;
 }
+
+figGeo *figGeo::construct(const string n) {
+	return new figGeo(n);
+}
