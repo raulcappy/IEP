@@ -9,10 +9,24 @@
 
 using namespace std;
 
+class Singleton
+{
+public:
+	Singleton(Singleton const&) = delete;
+	Singleton& operator=(Singleton const&) = delete;
 
-figGeo *createFig() {
-    return new figGeo("nume");
-}
+	static std::shared_ptr<Singleton> instance()
+	{
+		static std::shared_ptr<Singleton> s{ new Singleton };
+		return s;
+		
+		
+	}
+
+private:
+	Singleton() {}
+};
+
 
 void doSomething(const string n) {
     tr1::shared_ptr<figGeo>plnv1(figGeo::construct(n));
@@ -60,6 +74,7 @@ int main() {
     c1.afisare();
     
     doSomething("Shared Pointer");
+
 
     return 0;
 }
