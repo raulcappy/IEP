@@ -12,20 +12,21 @@ using namespace std;
 class Singleton
 {
 public:
-	Singleton(Singleton const&) = delete;
-	Singleton& operator=(Singleton const&) = delete;
+    Singleton(Singleton const&) = delete;
+    Singleton& operator=(Singleton const&) = delete;
 
-	static std::shared_ptr<Singleton> instance()
-	{
-		static std::shared_ptr<Singleton> s{ new Singleton };
-		return s;
-		
-		
-	}
+    static shared_ptr<Singleton> instance()
+    {
+        static shared_ptr<Singleton> s{ new Singleton };
+        return s;
+
+
+    }
 
 private:
-	Singleton() {}
+    Singleton() {}
 };
+
 
 
 void doSomething(const string n) {
